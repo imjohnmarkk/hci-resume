@@ -1,0 +1,92 @@
+$skill-color: #4f21fd;
+
+.resume-container {
+    display: flex;
+}
+
+.side-h2 {
+    margin: 10px 0;
+    padding-left: 8px;
+    border-left: 5px solid white;
+    font-weight: 500;
+}
+
+.resume-container .side-container {
+    padding: 20px;
+    width: 400px;
+    background: #144181;
+    height: 100vh;
+    color: #ffffff;
+    //border: 2px solid red;
+}
+
+// .resume-container .main-container {
+//     width: 100%;
+// }
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    //border: 1px solid red;
+}
+
+.contact-info,
+.education,
+.experties {
+    margin-top: 30px;
+}
+
+.profile img {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.contact-info .contact,
+.education .school-year,
+.education .school {
+    margin: 5px 0px 5px 10px;
+}
+
+.college, .senior-high, .high-school, .elementary {
+    margin-top: 20px;
+}
+
+.language .html-skill .html {
+    height: 10px;
+    background: $skill-color;
+    width: 70%;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+
+.language .css-skill .css {
+    height: 10px;
+    background: $skill-color;
+    border-radius: 32px;
+    width: 60%;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+
+.language .js-skill .js {
+    height: 10px;
+    background: $skill-color;
+    border-radius: 32px;
+    width: 20%;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
