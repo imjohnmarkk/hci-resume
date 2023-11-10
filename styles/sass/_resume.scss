@@ -1,4 +1,4 @@
-$skill-color: #4f21fd;
+$skill-color: #00d9e0;
 
 .resume-container {
     display: flex;
@@ -14,15 +14,11 @@ $skill-color: #4f21fd;
 .resume-container .side-container {
     padding: 20px;
     width: 400px;
-    background: #144181;
     height: 100vh;
+    overflow-y: hidden;
+    background: #144181;
     color: #ffffff;
-    //border: 2px solid red;
 }
-
-// .resume-container .main-container {
-//     width: 100%;
-// }
 
 .profile {
     display: flex;
@@ -39,8 +35,8 @@ $skill-color: #4f21fd;
 }
 
 .profile img {
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -54,8 +50,19 @@ $skill-color: #4f21fd;
     margin: 5px 0px 5px 10px;
 }
 
-.college, .senior-high, .high-school, .elementary {
+.school-year {
+    color: #00d9e0;
+}
+
+.college,
+.senior-high,
+.high-school,
+.elementary {
     margin-top: 20px;
+}
+
+.language {
+    margin: 20px 0 0 10px;
 }
 
 .language .html-skill .html {
@@ -89,4 +96,77 @@ $skill-color: #4f21fd;
     -moz-border-radius: 32px;
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
+}
+
+.html-skill .acronym,
+.css-skill .acronym,
+.js-skill .acronym {
+    margin: 15px 0 5px 0;
+}
+
+.main-container {
+    padding: 20px;
+    color: #0b0e14;
+    background: #d0dae2;
+}
+
+.name--course .name {
+    font-weight: 500;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.name--course .course {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    width: 600px;
+    color: #252835;
+}
+
+.about-me h2 {
+    font-weight: 500;
+    margin: 50px 0 10px 0;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* For smartphones */
+@media screen and (max-width: 600px) and (max-width: 767px) {
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-container {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .about-me {
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your styles for tablets go here */
+}
+
+/* For laptops */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* Your styles for laptops go here */
+}
+
+/* For desktops */
+@media screen and (min-width: 1280px) {
+    /* Your styles for desktops go here */
 }
