@@ -2,6 +2,8 @@ $skill-color: #00d9e0;
 
 .resume-container {
     display: flex;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .side-h2 {
@@ -18,7 +20,7 @@ $skill-color: #00d9e0;
     overflow-y: hidden;
     background: #144181;
     color: #ffffff;
-    flex: 1;
+    flex: 2;
 }
 
 .profile {
@@ -106,10 +108,10 @@ $skill-color: #00d9e0;
 }
 
 .main-container {
-    padding: 20px;
+    padding: 20px 0 0 40px;
     color: #0b0e14;
     background: #d0dae2;
-    flex: 1;
+    flex: 5;
 }
 
 .name--course .name {
@@ -137,6 +139,16 @@ $skill-color: #00d9e0;
     font-size: 18px;
     line-height: 1.5;
     max-width: 500px;
+}
+
+.qualification h2 {
+    font-weight: 500;
+    margin: 50px 0 10px 0;
+}
+
+.reference h2 {
+    font-weight: 500;
+    margin: 50px 0 10px 0;
 }
 
 @media screen and (max-width: 400px) and (max-width: 600px) {
