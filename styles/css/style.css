@@ -120,7 +120,6 @@
 }
 
 .about-me {
-  width: 600px;
   color: #252835;
 }
 
@@ -132,35 +131,36 @@
 .about-me p {
   font-size: 18px;
   line-height: 1.5;
+  max-width: 500px;
 }
 
-/* For smartphones */
-@media screen and (max-width: 600px) and (max-width: 767px) {
+@media screen and (max-width: 400px) and (max-width: 600px) {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
   .resume-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 700px) and (max-width: 800px) {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  .resume-container {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: scroll;
   }
   .side-container {
     width: 100vw;
-    height: 100%;
-  }
-  .about-me {
-    width: 100vw;
-    height: 100%;
     margin: 0;
   }
-}
-/* For tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Your styles for tablets go here */
-}
-/* For laptops */
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  /* Your styles for laptops go here */
-}
-/* For desktops */
-@media screen and (min-width: 1280px) {
-  /* Your styles for desktops go here */
 }
 *,
 *::after,
